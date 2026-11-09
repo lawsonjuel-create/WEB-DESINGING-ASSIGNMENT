@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StayEasy SL | Find your student home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="StayEasy SL home">
+      <span class="brand-mark">S</span><span>StayEasy <b>SL</b></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+    <nav id="mainNav">
+      <a class="active" href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#accommodation">Accommodation</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="header-button" href="#accommodation">Find a room <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> YOUR NEXT CHAPTER STARTS HERE</div>
+        <h1>Find a place<br>to <em>feel at home.</em></h1>
+        <p>Discover student-friendly rooms and apartments around Freetown. Compare prices, explore real photos and contact owners with ease.</p>
+        <div class="hero-actions">
+          <a class="primary-button" href="#accommodation">Explore accommodation <span>→</span></a>
+          <a class="text-button" href="#about">How it works <span>↗</span></a>
+        </div>
+        <div class="hero-proof">
+          <div class="avatar-stack">
+            <span>👩🏾</span><span>👨🏿</span><span>👩🏿</span>
+          </div>
+          <div><strong>Made for student life</strong><small>Simple • Clear • Convenient</small></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img class="hero-photo" src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85" alt="Bright modern apartment living room">
+        <div class="floating-card location-card"><span class="pin">⌖</span><div><strong>Freetown, Sierra Leone</strong><small>Find a place close to campus</small></div></div>
+        <div class="floating-card mini-card"><span class="mini-icon">⌂</span><div><strong>Room for your next chapter</strong><small>Explore places that fit you</small></div></div>
+      </div>
+    </section>
+
+    <section class="search-wrap" aria-label="Search accommodation">
+      <form class="search-panel" id="searchForm">
+        <label class="search-field"><span>⌖</span><span class="field-content"><small>LOCATION</small><input id="locationInput" type="text" placeholder="Where do you want to stay?"></span></label>
+        <label class="search-field"><span>⌂</span><span class="field-content"><small>ROOM TYPE</small><select id="typeInput"><option value="all">Any room type</option><option>Single room</option><option>Shared room</option><option>Apartment</option></select></span></label>
+        <label class="search-field"><span>₨</span><span class="field-content"><small>MAXIMUM BUDGET</small><select id="budgetInput"><option value="all">Any budget</option><option value="1500">Up to Le 1,500</option><option value="2500">Up to Le 2,500</option><option value="4000">Up to Le 4,000</option></select></span></label>
+        <button class="search-button" type="submit">Search rooms <span>→</span></button>
+      </form>
+    </section>
+
+    <section class="section listings-section" id="accommodation">
+      <div class="section-heading">
+        <div><div class="eyebrow">EXPLORE PLACES</div><h2>Spaces you'll love.</h2><p>Browse a few example student accommodation listings in Freetown.</p></div>
+        <a class="view-all" href="#accommodation" id="clearFilters">View all rooms <span>→</span></a>
+      </div>
+      <div class="filter-row">
+        <div class="filter-pills" id="filterPills">
+          <button class="filter-pill selected" data-filter="all">All places</button>
+          <button class="filter-pill" data-filter="Single room">Single rooms</button>
+          <button class="filter-pill" data-filter="Shared room">Shared rooms</button>
+          <button class="filter-pill" data-filter="Apartment">Apartments</button>
+        </div>
+        <span class="result-count" id="resultCount">4 places</span>
+      </div>
+      <div class="listing-grid" id="listingGrid">
+        <article class="listing-card" data-location="lumley" data-type="Single room" data-price="1800">
+          <div class="listing-image"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=85" alt="Warm and bright single bedroom"><span class="image-tag">Popular</span><button class="save-button" aria-label="Save listing">♡</button></div>
+          <div class="listing-info"><div class="listing-location">⌖ Lumley, Freetown</div><h3>Bright single room</h3><div class="features"><span>▣ Private room</span><span>◉ Water</span><span>⌑ Security</span></div><div class="listing-bottom"><div class="price">Le 1,800 <small>/ month</small></div><button class="details-button" data-title="Bright single room" data-location="Lumley, Freetown" data-price="Le 1,800 / month" data-type="Single room" data-image="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=85" data-description="A bright, simple single room in the Lumley area. Example listing for the StayEasy SL student project." data-facilities="Private room, Water, Security">View details ↗</button></div></div>
+        </article>
+        <article class="listing-card" data-location="mount aureol" data-type="Shared room" data-price="1200">
+          <div class="listing-image"><img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=900&q=85" alt="Comfortable shared bedroom"><span class="image-tag">Student pick</span><button class="save-button" aria-label="Save listing">♡</button></div>
+          <div class="listing-info"><div class="listing-location">⌖ Mount Aureol, Freetown</div><h3>Comfortable shared room</h3><div class="features"><span>▣ Shared room</span><span>◉ Electricity</span><span>⌑ Security</span></div><div class="listing-bottom"><div class="price">Le 1,200 <small>/ month</small></div><button class="details-button" data-title="Comfortable shared room" data-location="Mount Aureol, Freetown" data-price="Le 1,200 / month" data-type="Shared room" data-image="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=85" data-description="A budget-friendly shared room option for students. Example listing for the StayEasy SL student project." data-facilities="Shared room, Electricity, Security">View details ↗</button></div></div>
+        </article>
+        <article class="listing-card" data-location="hill station" data-type="Apartment" data-price="3500">
+          <div class="listing-image"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85" alt="Modern apartment interior"><span class="image-tag">More space</span><button class="save-button" aria-label="Save listing">♡</button></div>
+          <div class="listing-info"><div class="listing-location">⌖ Hill Station, Freetown</div><h3>Modern student apartment</h3><div class="features"><span>▣ Apartment</span><span>◉ Water</span><span>⌑ Parking</span></div><div class="listing-bottom"><div class="price">Le 3,500 <small>/ month</small></div><button class="details-button" data-title="Modern student apartment" data-location="Hill Station, Freetown" data-price="Le 3,500 / month" data-type="Apartment" data-image="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85" data-description="A modern apartment-style space with room to study and relax. Example listing for the StayEasy SL student project." data-facilities="Apartment, Water, Parking">View details ↗</button></div></div>
+        </article>
+        <article class="listing-card" data-location="freetown central" data-type="Single room" data-price="2200">
+          <div class="listing-image"><img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=900&q=85" alt="Neat bedroom with natural light"><button class="save-button" aria-label="Save listing">♡</button></div>
+          <div class="listing-info"><div class="listing-location">⌖ Freetown Central</div><h3>Neat private room</h3><div class="features"><span>▣ Private room</span><span>◉ Water</span><span>⌑ Electricity</span></div><div class="listing-bottom"><div class="price">Le 2,200 <small>/ month</small></div><button class="details-button" data-title="Neat private room" data-location="Freetown Central" data-price="Le 2,200 / month" data-type="Single room" data-image="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1200&q=85" data-description="A neat private room with useful basic facilities. Example listing for the StayEasy SL student project." data-facilities="Private room, Water, Electricity">View details ↗</button></div></div>
+        </article>
+      </div>
+      <p class="demo-note">Project demo: these are sample listings and illustrative prices, not verified live vacancies. Confirm availability and all costs with the owner before making any payment.</p>
+      <div class="empty-state" id="emptyState" hidden>No rooms match your search. Try another location or filter.</div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-photo"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1100&q=85" alt="Welcoming apartment interior"><div class="photo-caption"><span>✦</span><div><strong>A simpler way to settle in</strong><small>Find a space that feels right</small></div></div></div>
+      <div class="about-copy"><div class="eyebrow">WHY STAYEASY SL</div><h2>Less searching.<br><em>More settling in.</em></h2><p>Moving to a new place for school can feel like a lot. StayEasy SL brings useful accommodation details together so students can compare options before visiting.</p><div class="benefit"><span>01</span><div><strong>Clear information</strong><small>See sample prices, locations and facilities in one place.</small></div></div><div class="benefit"><span>02</span><div><strong>Room photos</strong><small>Preview spaces before deciding which ones to visit.</small></div></div><div class="benefit"><span>03</span><div><strong>Contact owners</strong><small>Get in touch to ask questions and confirm availability.</small></div></div></div>
+    </section>
+
+    <section class="steps-section">
+      <div class="section-heading centered"><div class="eyebrow">HOW IT WORKS</div><h2>Your room, in three steps.</h2><p>A simple way to start your accommodation search.</p></div>
+      <div class="steps-grid"><div class="step"><span class="step-number">01</span><div class="step-icon">⌕</div><h3>Search</h3><p>Enter an area in Freetown and choose the room type that suits you.</p></div><div class="step"><span class="step-number">02</span><div class="step-icon">▧</div><h3>Compare</h3><p>Look through photos, prices, locations and the facilities listed.</p></div><div class="step"><span class="step-number">03</span><div class="step-icon">↗</div><h3>Contact</h3><p>Contact the owner to ask questions and arrange a viewing.</p></div></div>
+    </section>
+
+    <section class="faq-section" id="faq">
+      <div class="faq-intro"><div class="eyebrow">GOT QUESTIONS?</div><h2>Good to know.</h2><p>Some quick answers before you start exploring.</p></div>
+      <div class="faq-list">
+        <details><summary>Are the rooms on this website available right now?<span>＋</span></summary><p>The current website is a student project demo with sample listings. Availability has not been verified. Contact the owner to confirm before visiting.</p></details>
+        <details><summary>Can I see the room before paying?<span>＋</span></summary><p>Yes. You should arrange a viewing and verify the property, owner and all costs before making any payment.</p></details>
+        <details><summary>What areas can I search?<span>＋</span></summary><p>The sample listings include Lumley, Mount Aureol, Hill Station and Freetown Central. More areas can be added later.</p></details>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div><div class="eyebrow">LET'S TALK</div><h2>Need a little help<br>finding your place?</h2><p>Send a message and tell us what kind of accommodation you are looking for.</p></div>
+      <form class="contact-form" id="contactForm"><label>Your name<input required type="text" placeholder="Enter your name"></label><label>Email address<input required type="email" placeholder="you@example.com"></label><label>How can we help?<textarea required rows="3" placeholder="I'm looking for a single room near..."></textarea></label><button class="primary-button" type="submit">Send message <span>→</span></button><small id="contactFeedback">Demo form: messages are not sent to a server.</small></form>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#home"><span class="brand-mark">S</span><span>StayEasy <b>SL</b></span></a><p>Helping students find a place to call home in Freetown.</p><span class="copyright">© 2026 StayEasy SL · Student project</span></footer>
+
+  <div class="modal" id="detailsModal" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="modalClose" aria-label="Close">×</button><img id="modalImage" src="" alt="Accommodation room"><div class="modal-body"><div class="eyebrow" id="modalLocation"></div><h2 id="modalTitle"></h2><div class="modal-price" id="modalPrice"></div><p id="modalDescription"></p><h4>Facilities</h4><p id="modalFacilities"></p><a class="primary-button" id="contactOwner" href="#contact">Contact owner <span>→</span></a><small class="modal-disclaimer">Sample project listing. Confirm details and availability directly.</small></div></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
